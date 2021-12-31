@@ -1,0 +1,30 @@
+img {
+  display: block;
+  width: 100%;
+}
+.container-dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+/* Sigle Dot style */
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 6px solid #f1f1f1;
+  margin: 0 5px;
+  background: #f1f1f1;
+  cursor: pointer;
+  transition: background-color 500ms ease-in-out;
+}
+
+/* Change the color of bg when user hover on it. */
+.dot:hover {
+  opacity: 0.9;
+  background: rgb(32, 32, 32);
+}
