@@ -1,0 +1,12 @@
+<div  class="container-slider">
+  <div #slides class="slides">
+    <ng-content select=".slider"></ng-content>
+  </div>
+  <button (click)="prevSlide()" class="btn-slide prev">
+    <img src="https://imgur.com/SUyRJqI.png" alt="prevBtn">
+  </button>
+  <button (click)="nextSlide()" class="btn-slide next">
+    <img src="https://imgur.com/M6rDsRR.png" alt="nextBtn">
+  </button>
+</div>
+<p>{{activeIndex}}</p>
